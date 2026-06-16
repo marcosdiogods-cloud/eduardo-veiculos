@@ -1,0 +1,14 @@
+import { Header } from "@/components/shared/header";
+import { Footer } from "@/components/shared/footer";
+import { WhatsAppFab } from "@/components/shared/whatsapp-fab";
+
+export default function PublicLayout({ children }: { children: React.ReactNode }) {
+  return (
+    <>
+      <Header />
+      <main className="flex-1">{children}</main>
+      <Footer />
+      <WhatsAppFab />
+    </>
+  );
+}
